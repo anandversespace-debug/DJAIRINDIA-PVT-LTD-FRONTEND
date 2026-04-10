@@ -36,8 +36,8 @@ const About = () => {
             </div>
             <div style={{ textAlign: 'right' }}>
               <img 
-                src="https://images.unsplash.com/photo-1595152230535-4202293390c5?auto=format&fit=crop&q=80&w=800"
-                alt="Agriculture fields"
+                src="/images/mission.png"
+                alt="Agriculture innovation"
                 style={{ width: '90%', borderRadius: '2rem', boxShadow: '20px 20px 60px rgba(0,0,0,0.1)' }}
               />
             </div>

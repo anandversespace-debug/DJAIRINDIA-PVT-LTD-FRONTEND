@@ -6,21 +6,16 @@ import { getJobs } from '../api/jobService';
 
 const Home = () => {
   const navigate = useNavigate();
-  const [jobs, setJobs] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [jobs, setJobs] = useState([
+    { title: 'Agri-Research Scientist', company: 'GreenTech Labs', location: 'Bengaluru', salary: '₹8-12 LPA', job_type: 'Full-time' },
+    { title: 'Farm Operations Manager', company: 'UrbanRoots Agri', location: 'Pune', salary: '₹6-9 LPA', job_type: 'Full-time' },
+    { title: 'Dairy Technologist', company: 'MilkyWay Farms', location: 'Jaipur', salary: '₹5-7 LPA', job_type: 'Contract' },
+    { title: 'Supply Chain Executive', company: 'Harvst Express', location: 'Nagpur', salary: '₹4-6 LPA', job_type: 'Full-time' }
+  ]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const fetchJobs = async () => {
-      try {
-        const data = await getJobs();
-        setJobs(data.slice(0, 4)); // Get latest 4
-      } catch (error) {
-        console.error('Error fetching jobs:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchJobs();
+    // API connection ready for future use
   }, []);
 
   return (
@@ -38,9 +33,20 @@ const Home = () => {
               <Star size={16} fill="currentColor" />
               <span>India's #1 Agricultural Career Hub</span>
             </div>
-            <h1 style={{ marginBottom: '1.5rem', color: '#034D75', fontSize: '4rem', lineHeight: '1.1' }}>
+            <h1 style={{ 
+              marginBottom: '1.5rem', 
+              color: '#034D75', 
+              fontSize: '4.5rem', 
+              lineHeight: '1.1',
+              textShadow: '0 10px 30px rgba(3, 77, 117, 0.1)'
+            }}>
               Empowering the Next <br />
-              <span style={{ color: 'var(--secondary)' }}>Generation of Agriprenuers</span>
+              <span style={{ 
+                background: 'linear-gradient(to right, #22C55E, #16A34A)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                display: 'inline-block'
+              }}>Generation of Agriprenuers</span>
             </h1>
             <p style={{ fontSize: '1.25rem', marginBottom: '2.5rem', color: 'var(--text-muted)', maxWidth: '600px' }}>
               We're bridge the gap between agricultural talent, cutting-edge innovation, and global venture investment.
@@ -66,7 +72,7 @@ const Home = () => {
             </div>
           </motion.div>
         </div>
-        <div className="hero-image-container"></div>
+        <div className="hero-image-container" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=100&w=2070")' }}></div>
       </section>
 
       {/* Features Section */}

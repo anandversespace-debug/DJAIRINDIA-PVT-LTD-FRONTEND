@@ -68,13 +68,16 @@ const Investors = () => {
 
       <section className="section" style={{ background: '#F8FAFC' }}>
         <div className="container">
-          <div className="glass-card" style={{ padding: '3rem 1.5rem', borderRadius: '2rem', textAlign: 'center', border: 'none', background: 'white' }}>
-            <ShieldCheck size={64} color="var(--primary)" style={{ marginBottom: '2rem', display: 'inline-block' }} />
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Become a Certified Investor</h2>
-            <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto 3rem' }}>
-              Gain access to exclusive agri-deals, market insights, and portfolio management tools. Join a community of over 1,200 successful investors.
-            </p>
-            <button className="btn btn-secondary" style={{ padding: '1.25rem 2.5rem', fontWeight: '800' }}>Register Now</button>
+          <div className="glass-card" style={{ padding: '0', borderRadius: '2rem', textAlign: 'center', border: 'none', background: 'white', overflow: 'hidden' }}>
+            <img src="/images/investors.png" alt="Investors meeting" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+            <div style={{ padding: '3rem 1.5rem' }}>
+              <ShieldCheck size={64} color="var(--primary)" style={{ marginBottom: '2rem', display: 'inline-block' }} />
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Become a Certified Investor</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto 3rem' }}>
+                Gain access to exclusive agri-deals, market insights, and portfolio management tools. Join a community of over 1,200 successful investors.
+              </p>
+              <button className="btn btn-secondary" style={{ padding: '1.25rem 2.5rem', fontWeight: '800' }}>Register Now</button>
+            </div>
           </div>
         </div>
       </section>

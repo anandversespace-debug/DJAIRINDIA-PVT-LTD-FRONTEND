@@ -5,21 +5,18 @@ import { getJobs } from '../api/jobService';
 
 const Career = () => {
   const [activeTab, setActiveTab] = useState('job_seeker');
-  const [jobs, setJobs] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [jobs, setJobs] = useState([
+    { title: 'Agri-Research Scientist', company: 'GreenTech Labs', location: 'Bengaluru', salary: '₹8-12 LPA', job_type: 'Full-time' },
+    { title: 'Farm Operations Manager', company: 'UrbanRoots Agri', location: 'Pune', salary: '₹6-9 LPA', job_type: 'Full-time' },
+    { title: 'Dairy Technologist', company: 'MilkyWay Farms', location: 'Jaipur', salary: '₹5-7 LPA', job_type: 'Contract' },
+    { title: 'Supply Chain Executive', company: 'Harvst Express', location: 'Nagpur', salary: '₹4-6 LPA', job_type: 'Full-time' },
+    { title: 'Horticulture Consultant', location: 'Shimla', job_type: 'Part-time', salary: '₹3-5 LPA', company: 'Himalayan Flora' },
+    { title: 'Aquaculture Technician', location: 'Kochi', job_type: 'Full-time', salary: '₹4-6 LPA', company: 'AquaSeas' }
+  ]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const fetchJobs = async () => {
-      try {
-        const data = await getJobs();
-        setJobs(data);
-      } catch (error) {
-        console.error('Error fetching jobs:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchJobs();
+    // API connection ready for future use
   }, []);
 
   const categories = [
