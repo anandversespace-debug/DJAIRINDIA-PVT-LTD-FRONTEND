@@ -21,25 +21,27 @@ const Home = () => {
   return (
     <div className="home-page">
       {/* Hero Section */}
-      <section className="section hero" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden', paddingTop: '120px' }}>
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+      <section className="section hero" style={{ 
+        minHeight: 'calc(100vh - var(--nav-height))', 
+        display: 'flex', 
+        alignItems: 'center', 
+        position: 'relative', 
+        overflow: 'hidden', 
+        paddingTop: '60px',
+        paddingBottom: '60px'
+      }}>
+        <div className="container" style={{ position: 'relative', zIndex: 10 }}>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="hero-content"
           >
-            <div className="hero-pill">
+            <div className="hero-pill" style={{ display: 'inline-flex' }}>
               <Star size={16} fill="currentColor" />
               <span>India's #1 Agricultural Career Hub</span>
             </div>
-            <h1 style={{ 
-              marginBottom: '1.5rem', 
-              color: '#034D75', 
-              fontSize: '4.5rem', 
-              lineHeight: '1.1',
-              textShadow: '0 10px 30px rgba(3, 77, 117, 0.1)'
-            }}>
+            <h1 className="hero-title">
               Empowering the Next <br />
               <span style={{ 
                 background: 'linear-gradient(to right, #22C55E, #16A34A)',

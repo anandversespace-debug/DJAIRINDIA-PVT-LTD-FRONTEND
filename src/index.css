@@ -44,6 +44,26 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-main);
 }
 
+.hero-title {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  color: #034D75;
+  line-height: 1.1;
+  text-shadow: 0 10px 30px rgba(3, 77, 117, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .hero-title { font-size: 3.5rem; }
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.75rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2.25rem; }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -147,6 +167,12 @@ nav .container {
   align-items: center;
   gap: 0.5rem;
   white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .logo span {
+    display: none;
+  }
 }
 
 .nav-links {
@@ -416,6 +442,7 @@ footer ul li:hover {
   margin-top: 4rem;
   border-top: 1px solid rgba(0,0,0,0.05);
   padding-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .hero-stat b {
@@ -427,6 +454,16 @@ footer ul li:hover {
 .hero-stat span {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .hero-stats-banner {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .hero-stat {
+    text-align: center;
+  }
 }
 
 @media (max-width: 1024px) {
