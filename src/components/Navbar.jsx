@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="container">
           <Link to="/" className="logo">
             <Rocket size={32} />
-            <span>DJAIRINDIA PVT LTD</span>
+            <span>DJAIRINDIA</span>
           </Link>
 
           {/* Desktop Nav */}

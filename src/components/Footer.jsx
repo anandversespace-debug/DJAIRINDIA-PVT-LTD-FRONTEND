@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="footer-brand">
             <Link to="/" className="logo" style={{ color: 'white', marginBottom: '1.5rem' }}>
               <Rocket size={32} />
-              <span>DJAIRINDIA PVT LTD</span>
+              <span>DJAIRINDIA</span>
             </Link>
             <p style={{ opacity: 0.8, marginTop: '1rem' }}>
               Empowering the next generation of agricultural innovators, jobs, and startups.
