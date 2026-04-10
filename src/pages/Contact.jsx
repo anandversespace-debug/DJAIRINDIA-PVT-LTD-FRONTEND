@@ -59,7 +59,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 style={{ marginBottom: '0.5rem' }}>Email</h3>
-                    <p style={{ fontSize: '1.2rem', fontWeight: '700' }}>support@agrinova.com</p>
+                    <p style={{ fontSize: '1.2rem', fontWeight: '700' }}>support@djairindia.com</p>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>We typically respond within 24 hours.</p>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Contact = () => {
               
               <div style={{ marginTop: '3rem' }}>
                 <iframe 
-                  title="AgriNova Location"
+                  title="DJAIRINDIA Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.9973874144!2d77.35073573351911!3d12.953847725577607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1712760000000!5m2!1sen!2sin" 
                   width="100%" 
                   height="300" 

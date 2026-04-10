@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Sprout, Menu, X } from 'lucide-react';
+import { Sprout, Menu, X, Rocket } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -20,8 +20,8 @@ const Navbar = () => {
       <nav>
         <div className="container">
           <Link to="/" className="logo">
-            <Sprout size={32} />
-            <span>AgriNova</span>
+            <Rocket size={32} />
+            <span>DJAIRINDIA PVT LTD</span>
           </Link>
 
           {/* Desktop Nav */}

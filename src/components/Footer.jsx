@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sprout, Mail, Phone } from 'lucide-react';
+import { Sprout, Mail, Phone, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-4">
           <div className="footer-brand">
             <Link to="/" className="logo" style={{ color: 'white', marginBottom: '1.5rem' }}>
-              <Sprout size={32} />
-              <span>AgriNova</span>
+              <Rocket size={32} />
+              <span>DJAIRINDIA PVT LTD</span>
             </Link>
             <p style={{ opacity: 0.8, marginTop: '1rem' }}>
               Empowering the next generation of agricultural innovators, jobs, and startups.
@@ -40,7 +40,7 @@ const Footer = () => {
             <h3>Contact Us</h3>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Mail size={18} /> support@agrinova.com
+                <Mail size={18} /> support@djairindia.com
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Phone size={18} /> +91-XXXXXXXXXX
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '4rem', paddingTop: '2rem', textAlign: 'center', opacity: 0.6 }}>
-          <p>© 2026 AgriNova. All rights reserved.</p>
+          <p>© 2026 DJAIRINDIA PVT LTD. All rights reserved.</p>
         </div>
       </div>
     </footer>

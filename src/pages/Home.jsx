@@ -171,7 +171,7 @@ const Home = () => {
         }}>
           <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', color: 'white' }}>Join the Agri Revolution</h2>
           <p style={{ fontSize: '1.25rem', marginBottom: '3rem', opacity: 0.9, maxWidth: '800px', margin: '0 auto 3rem' }}>
-            Whether you're looking for your next career move or launching the next big agritech startup, AgriNova is your home.
+            Whether you're looking for your next career move or launching the next big agritech startup, DJAIRINDIA PVT LTD is your home.
           </p>
           <button onClick={() => navigate('/contact')} className="btn btn-secondary" style={{ padding: '1.5rem 3rem', fontSize: '1.2rem', boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}>Get Started Now</button>
         </div>

@@ -6,7 +6,7 @@ const About = () => {
     <div className="about-page">
       <section className="section" style={{ background: '#F8FAFC', textAlign: 'center' }}>
         <div className="container">
-          <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>About AgriNova</h1>
+          <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>About DJAIRINDIA PVT LTD</h1>
           <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', maxWidth: '800px', margin: '0 auto' }}>
             Transforming agriculture careers and entrepreneurship through innovation and community.
           </p>
@@ -31,7 +31,7 @@ const About = () => {
                 </div>
               </div>
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)' }}>
-                Founded in 2024, AgriNova has quickly grown into a hub for agricultural excellence. We believe that by providing the right resources, we can solve some of the world's most pressing food security challenges.
+                Founded in 2024, DJAIRINDIA PVT LTD has quickly grown into a hub for agricultural excellence. We believe that by providing the right resources, we can solve some of the world's most pressing food security challenges.
               </p>
             </div>
             <div style={{ textAlign: 'right' }}>
@@ -49,7 +49,7 @@ const About = () => {
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'white' }}>Our Team</h2>
-            <p style={{ opacity: 0.8 }}>Meet the visionaries behind AgriNova.</p>
+            <p style={{ opacity: 0.8 }}>Meet the visionaries behind DJAIRINDIA PVT LTD.</p>
           </div>
           <div className="grid grid-cols-4">
             {[
